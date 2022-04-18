@@ -8,6 +8,7 @@ const app = express()
 const port = 8888
 
 dotenv.config()
+connectDb()
 
 app.use(express.json()) // Parses JSON dated from post/put requests
 app.use(cors()) // allows front and backend to talk to each other if they are on different servers
